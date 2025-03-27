@@ -1,0 +1,95 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Arborize
+build_property.RootNamespace = Arborize
+build_property.ProjectDir = C:\Users\Marai\Documents\GitHub\pmv-ads-2024-1-e2-proj-int-t8-arborize\arborize\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\Marai\Documents\GitHub\pmv-ads-2024-1-e2-proj-int-t8-arborize\arborize
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Marai/Documents/GitHub/pmv-ads-2024-1-e2-proj-int-t8-arborize/arborize/Views/CadastrarArvore/CadastrarArvore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cmFyQXJ2b3JlXENhZGFzdHJhckFydm9yZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marai/Documents/GitHub/pmv-ads-2024-1-e2-proj-int-t8-arborize/arborize/Views/Cadastro/Cadastro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9cQ2FkYXN0cm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marai/Documents/GitHub/pmv-ads-2024-1-e2-proj-int-t8-arborize/arborize/Views/DetalhesArvore/DetalhesArvore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxoZXNBcnZvcmVcRGV0YWxoZXNBcnZvcmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marai/Documents/GitHub/pmv-ads-2024-1-e2-proj-int-t8-arborize/arborize/Views/Feedback/Feedback.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tcRmVlZGJhY2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marai/Documents/GitHub/pmv-ads-2024-1-e2-proj-int-t8-arborize/arborize/Views/Feed/Feed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZFxGZWVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marai/Documents/GitHub/pmv-ads-2024-1-e2-proj-int-t8-arborize/arborize/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marai/Documents/GitHub/pmv-ads-2024-1-e2-proj-int-t8-arborize/arborize/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marai/Documents/GitHub/pmv-ads-2024-1-e2-proj-int-t8-arborize/arborize/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marai/Documents/GitHub/pmv-ads-2024-1-e2-proj-int-t8-arborize/arborize/Views/MarketPlace/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFya2V0UGxhY2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marai/Documents/GitHub/pmv-ads-2024-1-e2-proj-int-t8-arborize/arborize/Views/MinhasArvores/MinhasArvores.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWluaGFzQXJ2b3Jlc1xNaW5oYXNBcnZvcmVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marai/Documents/GitHub/pmv-ads-2024-1-e2-proj-int-t8-arborize/arborize/Views/Perfil/Perfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXFBlcmZpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marai/Documents/GitHub/pmv-ads-2024-1-e2-proj-int-t8-arborize/arborize/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marai/Documents/GitHub/pmv-ads-2024-1-e2-proj-int-t8-arborize/arborize/Views/Shared/Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marai/Documents/GitHub/pmv-ads-2024-1-e2-proj-int-t8-arborize/arborize/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marai/Documents/GitHub/pmv-ads-2024-1-e2-proj-int-t8-arborize/arborize/Views/TaskList/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza0xpc3RcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marai/Documents/GitHub/pmv-ads-2024-1-e2-proj-int-t8-arborize/arborize/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marai/Documents/GitHub/pmv-ads-2024-1-e2-proj-int-t8-arborize/arborize/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

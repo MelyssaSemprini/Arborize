@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+}
+
+header {
+    display: flex; /* Usar Flexbox para o layout do cabeçalho */
+    justify-content: space-between; /* Espaçar os itens entre si */
+    align-items: center; /* Alinhar verticalmente os itens */
+    padding: 20px; /* Ajuste o padding conforme necessário */
+    background-color: #f8f9fa; /* Cor do fundo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destacar o header */
+}
+
+.header-logo {
+    display: flex; /* Flexbox para o logo e título */
+    align-items: center; /* Alinha verticalmente o ícone e o título */
+}
+
+.header-logo h1 {
+    margin-left: 10px; /* Espaçamento entre o ícone e o título */
+    font-size: 24px; /* Tamanho do texto do título */
+    color: #333; /* Cor do título */
+}
+
+.login-link {
+    margin-left: auto; /* Empurra o link para a extrema direita */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #007bff; /* Cor do link */
+}
+
+.login-link:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.main-container {
+    display: flex;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+.user-info {
+    width: 25%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.user-img{
+    width: 70px;
+    height: auto;
+}
+
+.welcome-message {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.adc-post{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.content {
+    width: 75%;
+}
+
+.post {
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.post-header .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.post-img{
+    width: 100%;
+    height: auto;
+}
+
+.post-body p:first-child {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.post-body p {
+    color: #555;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 250px; /* Largura da sidebar */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -300px; /* Totalmente fora da tela */
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    transition: left 0.3s ease; /* Suaviza o movimento da sidebar */
+    z-index: 10;
+}
+
+.sidebar.open {
+    left: 0; /* Traz a sidebar para dentro da tela */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1 );
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.FeedBack{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.FeedBack:hover{
+    text-decoration: underline;
+}
+
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Esconde o campo de upload de arquivo padrão */
+  #postImage {
+    display: none;
+  }
+
+  /* Estilos para os outros campos */
+  .modal-content input[type="text"],
+  .modal-content input[type="date"],
+  .modal-content textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .modal-content textarea {
+    resize: none;
+  }
+
+  .modal-content button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .modal-content button:hover {
+    background-color: #218838;
+  }
+
+  #openModalBtn {
+    background-color: transparent;
+    border: none;
+}

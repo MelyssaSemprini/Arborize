@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.conteudo{
+    width:550px;
+    height: 580px;
+    background: transparent;
+    border:2px solid rgba(255, 255, 255, .2);
+    color:#fff;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    padding: 30px 40px;
+    position: relative;
+    right:5.5%;
+}
+
+.conteudo h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.conteudo .input-box{
+    position: relative;
+    width: 100%;
+    margin:10px 0;
+}
+
+.input-box {
+    display: flex; 
+    gap: 10px;  
+}
+
+.input-box input {
+    padding: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 40px; 
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color:#fff;
+    font-size: 16px;;
+}
+
+.input-box input::placeholder{
+    color:#fff;
+}
+.input-boxEm input::placeholder{
+    color:#fff;
+}
+
+.input-box .input-data{
+    position: relative;
+    min-width: 50%;
+}
+
+.input-boxEm input{
+    position: relative;
+    width:103% ;
+    padding: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 40px; 
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color:#fff;
+    font-size: 16px;;
+
+}
+
+.btn-voltar{
+    width: 11%;
+    height:35px ;
+    background: #00712d89;
+    border:none;
+    border-radius: 40px;
+    cursor:pointer;
+    font-size: 16px;
+    position: relative;
+    right:26%;
+    margin-bottom:41.5%;
+    color:#fff;
+    border: 2px solid rgba(255, 255, 255, .2);
+}
+
+.btn-voltar .btn-voltar2{
+    color:white;
+    position: relative;
+    left:54px;
+    text-decoration: none;
+    top:17%;  
+}
+
+.conteudo .btn-cadastrar{
+    width: 100%;
+    height: 45px;
+    position: relative;
+    bottom: 20%;
+    background: #fff;
+    border:none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color:#333;
+    font-weight: 600; 
+    transition: background-color 0.3s; 
+}
+
+.conteudo .btn-cadastrar:hover{
+    background-color:#d1ed91;
+}
+
+@media screen and (min-height: 768px) and (max-width: 1920px) {
+    
+    .conteudo{
+        width: 700px;
+    }
+
+    .conteudo .input-box .input-data{
+        min-width: 60%;
+    }
+
+    .conteudo .input-boxEm{
+        width:97%;
+    }
+
+    .btn-voltar{
+        top:10px;
+        width: 175px;
+        right:510px;
+    }
+
+    .input-box input{
+        width: 330px;
+    }
+}

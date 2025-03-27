@@ -1,0 +1,8 @@
+# Ignorar pasta obj e bin (arquivos temporários de build)
+/bin/
+/obj/
+
+# Ignorar arquivos de compilação específicos do .NET
+*.dll
+*.pdb
+*.sourcelink.json

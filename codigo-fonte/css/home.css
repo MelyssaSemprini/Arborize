@@ -1,0 +1,322 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(213, 237, 159);
+}
+
+/* Estilo para desktop */
+html, body {
+    height: 100%; /* Garante que o HTML e o body ocupem toda a altura da tela */
+    margin: 0; /* Remove margens padrão */
+    font-family: Arial, sans-serif;
+    background-color: rgb(213, 237, 159);
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Direção vertical */
+}
+
+/* Navbar */
+
+.navbar {
+    padding: 0rem;
+}
+
+h3 {
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(0, 113, 45);
+    color: #FFFBE6;
+}
+
+.container-fluid.fixed-top {
+    background-color: rgb(0, 113, 45);
+}
+
+.ms-auto {
+    background-color: rgb(0, 113, 45);
+    text-align: center;
+    color: #FFFBE6;
+    margin-top: 1%;    
+    margin-bottom: 1%;
+    border: none;
+}
+
+.navbar-toggler {
+    border-color: transparent;    
+    background-color: transparent;
+}
+
+.navbar-toggler-icon {    
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.btn-primary {
+    background-color: rgb(255,145,0);
+    text-align: center;
+    border: none;
+    color: #ffffff;
+    transition: background-color 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+.btn-secondary {
+    background-color: rgb(255,145,0);
+    text-align: center;
+    border: none;
+    color: #ffffff;
+    transition: background-color 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+/* Alterando a div com classes 'ms-auto d-flex' */
+.ms-auto.d-flex {
+    background-color: transparent; /* Cor de fundo da div */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Efeitos de transição botão 'Entrar' */
+.btn-primary:hover {
+    background-color: rgb(213, 237, 159); /* Cor de fundo ao passar o mouse */
+}
+
+/* Efeitos de transição botão 'Cadastro' */
+.btn-secondary:hover {
+    background-color: rgb(213, 237, 159); /* Cor de fundo ao passar o mouse */
+}
+
+/* Header Menu */
+.offcanvas-header {
+    background-color: rgb(6, 74, 33);
+}
+
+/* Menu */
+h5 {
+    color: #FFFBE6;
+    text-align: center;
+}
+
+/* Corpo do menu */
+.offcanvas-body {
+    background-color: rgb(213, 237, 159);
+    border: none;
+    position: relative; /* Adicionado para o z-index funcionar */
+}
+
+/* Corpo do menu 2º parte (pesquisa) */
+.navbar-nav {
+    border: none;
+    background-color: rgb(213, 237, 159);
+}
+
+.offcanvas-title {
+    background-color: rgb(6, 74, 33);
+}
+
+.offcanvas {
+    z-index: 1050; /* O valor 1050 é padrão do Bootstrap para offcanvas */
+}
+
+/* Adicionando z-index ao botão de fechar */
+.btn-close {
+    z-index: 1050; /* Certifique-se de que ele esteja acima de outros elementos */
+}
+
+.custom-close {
+    width: 2rem; /* Ajuste a largura do botão */
+    height: 2rem; /* Ajuste a altura do botão */
+}
+
+.custom-close::before {
+    content: "";
+    display: inline-block;
+    width: -20px; /* Espessura da linha horizontal */
+    height: 2rem; /* Altura da linha horizontal */
+    background-color: white; /* Cor da linha */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.custom-close::after {
+    content: "";
+    display: inline-block;
+    width: -20px; /* Espessura da linha vertical */
+    height: 2rem; /* Altura da linha vertical */
+    background-color: white; /* Cor da linha */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.nav-link {
+    color: green;
+    background-color: rgb(213, 237, 159);
+}
+
+.nav-link:hover {
+    background-color: rgb(255,145,0);
+    
+}
+
+/* Conteúdo de texto */
+
+.text-start h1 {
+    margin-top: 7rem;
+    margin-left: 7rem;
+    font-family: Poppins;
+}
+
+.text-start p {
+    margin-left: 7rem;
+    font-family: Poppins;
+    font-size:large;
+}
+
+/* Carousel */
+
+.col-md-4 {
+    margin-top: 3rem;
+}
+
+/* Text and image*/
+
+img {
+    justify-content: left;
+}
+
+h2 {
+    font-family: Poppins;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.col-md-7.d-flex.align-items-center {
+    font-family: Poppins;
+    font-size: x-large;
+    transform: translateX(90%) translateY(-200%);    
+}
+
+.col-md-5 {
+    margin-left: 7rem;
+    margin-top: 2rem;
+}
+
+/* Estilo para o conteúdo da FAQ (accordion body) */
+.accordion-body {
+    background-color: #FFFBE6; /* Cor de fundo do conteúdo */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    padding: 1rem; /* Espaçamento interno */
+    border: 1px solid rgba(0, 113, 45, 0.2); /* Bordas suaves para separar as seções */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.accordion-button {
+    background-color: rgb(213, 237, 159); /* Cor de fundo do botão */
+    color: rgb(0, 113, 45); /* Cor do texto no botão */
+    border: none; /* Remove borda padrão */
+}
+
+.accordion-button:hover {
+    background-color: rgb(255, 145, 0); /* Cor de fundo ao passar o mouse no botão */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+.accordion-button:focus {
+    box-shadow: none; /* Remove o efeito de foco padrão */
+}
+
+.accordion-header {
+    margin-bottom: 0.5rem; /* Espaçamento entre cabeçalhos */
+}
+
+.accordion-item {
+    border: none; /* Remove as bordas padrão entre os itens */
+}
+
+/* Cor do texto e fundo dos botões ao expandir */
+.accordion-button:not(.collapsed) {
+    background-color: rgb(0, 113, 45);
+    color: white;
+}
+
+
+/* Footer */
+
+.container-fluid {
+    background-color: #FFFBE6;
+    margin-top: 2rem;
+}
+
+.nav-item {
+    background-color: #FFFBE6;
+}
+
+nav a {
+    background-color: #FFFBE6;
+}
+
+.nav.justify-content-center.border-bottom.pb-1.mb-2 {
+    background-color: #FFFBE6;
+}
+
+.py-0.my-1 {
+    background-color: #FFFBE6;
+    border-color: #FFFBE6;
+}
+
+.text-center.text-body-secondary {
+    background-color: #FFFBE6;
+}
+
+.d-flex.justify-content-center {
+    background-color: transparent;
+    
+}
+
+footer img {
+    background-color: transparent;
+}
+
+#custom-footer {
+    background-color: #FFFBE6;
+    margin-top: 2rem;
+}
+
+#custom-footer .custom-link {
+    color: #FFFBE6 !important;
+}
+
+/* Personalização do footer */
+#custom-footer {
+    background-color: #FFFBE6; /* Fundo escuro */
+    color: rgb(0, 113, 45); /* Texto branco */
+    padding: 20px 0;
+}
+
+#custom-footer .nav-link {
+    color: rgb(0, 113, 45); /* Cor dos links */
+    text-decoration: none;
+    background-color: #FFFBE6;
+}
+
+#custom-footer .nav-link:hover {
+    color: rgb(255,145,0); /* Cor dos links ao passar o mouse (hover) */
+}
+
+#custom-footer img {
+    filter: none;
+    position: relative; /* Deixa o footer em posição relativa */
+    z-index: 1;         /* Baixa a prioridade do footer */
+    background-color: transparent;
+}
+
+#custom-footer p {
+    color: rgb(0, 113, 45); /* Cor do texto para os direitos autorais */
+    background-color: #FFFBE6;
+    z-index: 1; /* Coloca o footer em um nível mais baixo */
+    position: relative; /* Mantém a posição relativa do footer */
+}
+

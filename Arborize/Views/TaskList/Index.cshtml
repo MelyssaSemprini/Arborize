@@ -1,0 +1,41 @@
+@model IEnumerable<Arborize.Models.TaskListModel>
+
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+    ViewData["Title"] = "Lista de Tarefas";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/TaskList.css" asp-append-version="true" />
+}
+
+<div class="container display-flex align-center justify-center txt-center">
+    <div class="container-info">
+        <h2>COMPLETE TAREFAS!</h2>
+        <p>Complete tarefas, ajude o meio ambiente e veja como suas ações geram frutos imediatamente! Completando tarefas você ganha pontos que podem ser trocados por recompensas no mundo real.</p>
+        <a asp-controller="MarketPlace" asp-action="MarketPlace" class="btn-action">Acesse nossa loja</a>
+    </div>
+</div>
+
+<div class="container-tarefas">
+    @if (Model != null && Model.Any())
+    {
+        @foreach (var tarefa in Model)
+        {
+            <div class="tarefa @(tarefa.ValorTarefa > 0 ? "completa" : "") display-flex justify-between">
+                <h3>@tarefa.NomeTarefa</h3>
+                <p>@tarefa.ValorTarefa.ToString("C")</p>
+                
+                <a asp-controller="@tarefa.ControllerTarefa" asp-action="@tarefa.ActionTarefa" asp-route-id="@tarefa.IdTaskList" class="btn-tarefa" aria-label="Ir para a tarefa">Ir até a tarefa</a>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="no-tasks txt-center">
+            <h3>Nenhuma tarefa disponível no momento.</h3>
+            <p>Volte mais tarde para conferir novas oportunidades!</p>
+        </div>
+    }
+</div>
+

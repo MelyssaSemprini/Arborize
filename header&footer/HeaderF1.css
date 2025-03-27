@@ -1,0 +1,103 @@
+/* Estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Ocupa 100% da altura da janela do navegador */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe a altura total da tela */
+}
+
+header {
+    display: flex; /* Usar Flexbox para o layout do cabeçalho */
+    justify-content: space-between; /* Espaçar os itens entre si */
+    align-items: center; /* Alinhar verticalmente os itens */
+    padding: 20px; /* Ajuste o padding conforme necessário */
+    background-color: #f8f9fa; /* Cor do fundo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+    display: flex; /* Flexbox para o logo e título */
+    align-items: center; /* Alinha verticalmente o ícone e o título */
+}
+
+.login-link {
+    margin-left: auto; /* Empurra o link para a extrema direita */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #007bff; /* Ajuste a cor do link se necessário */
+}
+
+main {
+    flex-grow: 1; /* O conteúdo principal cresce para ocupar o espaço entre header e footer */
+    padding: 20px 0; /* Adiciona espaço ao redor do conteúdo principal */
+}
+
+footer {
+    background-color: #f8f9fa; /* Cor de fundo do footer */
+    padding: 20px 0;
+    margin-top: auto; /* Garante que o footer fique "colado" no fundo */
+    display: flex; /* Usar flexbox para layout do footer */
+    align-items: center; /* Alinha verticalmente os itens */
+    width: 100%; /* Faz o footer ocupar 100% da largura */
+}
+
+.footer-left {
+    margin-left: 30px; /* Margem à esquerda para o texto de copyright */
+    flex-grow: 1; /* Faz com que a parte esquerda cresça e empurre os links para a direita */
+}
+
+.footer-left p {
+    margin: 0;
+}
+
+.footer-arborize {
+    font-size: 24px; /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: bold; /* Para deixar o texto em negrito, se desejar */
+}
+
+.footer-left a {
+    color: inherit; /* Herda a cor do elemento pai (pode ser a cor do texto padrão) */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.footer-left a:hover {
+    text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse, se você quiser manter esse efeito */
+}
+
+.footer-links {
+    display: flex; /* Mantém os links em linha */
+    gap: 50px; /* Espaçamento entre os itens */
+    margin-right: 30px; /* Margem à direita para afastar do lado da página */
+}
+
+.footer-links h6 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-links ul {
+    list-style-type: none; /* Remove marcadores de lista */
+    padding-left: 0; /* Remove espaçamento à esquerda */
+}
+
+.footer-links li {
+    margin-bottom: 5px; /* Espaçamento entre os itens da lista */
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+

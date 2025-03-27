@@ -1,0 +1,29 @@
+cff-version: 1.0.1
+message: Sistema para incentivar a platação de árvores
+title: Arborize
+authors:
+  - family-names: Santos de Paula
+    given-names: Ana Clara
+  - family-names: Pereira
+    given-names: Arthur 
+  - family-names: Gomes dos Santos
+    given-names: Danielle 
+  - family-names: Rodrigues Antunes
+    given-names: Maria Eduarda
+  - family-names: Semprini
+    given-names: Melyssa
+  - family-names: Freitas de Paula
+    given-names: Nasson
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Paiva Tizzo
+    given-names: Neil
+  - name-suffix: Professor
+    affiliation: PUC Minas
+keywords:
+  - Arvores
+  - Meio Ambiente
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t8-arborize.git
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2024-11-23

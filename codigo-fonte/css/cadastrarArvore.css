@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+/* HEADER & FOOTER */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Ocupa 100% da altura da janela do navegador */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe a altura total da tela */
+}
+
+header {
+    display: flex; /* Usar Flexbox para o layout do cabeçalho */
+    justify-content: space-between; /* Espaçar os itens entre si */
+    align-items: center; /* Alinhar verticalmente os itens */
+    padding: 20px; /* Ajuste o padding conforme necessário */
+    background-color: #f8f9fa; /* Cor do fundo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+    display: flex; /* Flexbox para o logo e título */
+    align-items: center; /* Alinha verticalmente o ícone e o título */
+}
+
+.header a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #ff9800;
+}
+
+.back-btn {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    flex-grow: 1; /* O conteúdo principal cresce para ocupar o espaço entre header e footer */
+    padding: 20px 0; /* Adiciona espaço ao redor do conteúdo principal */
+}
+
+
+footer {
+    background-color: #f8f9fa; /* Cor de fundo do footer */
+    padding: 20px 0; /* Padding para o footer */
+    margin-top: auto; /* Garante que o footer fique "colado" no fundo */
+    width: 100%; /* Faz o footer ocupar 100% da largura */
+    display: flex; /* Usar flexbox para o layout do footer */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo do footer */
+}
+
+/* FIM HEADER & FOOTER */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: column;
+    justify-content: space-between;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 4rem;
+}
+
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    padding: 1rem;
+    max-width: 10rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45A049;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-title {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #4CAF50;
+}
+
+.image-title span {
+    font-size: 16px;
+    color: #FFA500;
+}
+
+.image-title p {
+    margin: 5px 0 0;
+}
+
+
+
+
+

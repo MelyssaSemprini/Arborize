@@ -1,0 +1,70 @@
+/* Estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Ocupa 100% da altura da janela do navegador */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe a altura total da tela */
+}
+
+header {
+    display: flex; /* Usar Flexbox para o layout do cabeçalho */
+    justify-content: space-between; /* Espaçar os itens entre si */
+    align-items: center; /* Alinhar verticalmente os itens */
+    padding: 20px; /* Ajuste o padding conforme necessário */
+    background-color: #f8f9fa; /* Cor do fundo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+    display: flex; /* Flexbox para o logo e título */
+    align-items: center; /* Alinha verticalmente o ícone e o título */
+}
+
+.login-link {
+    margin-left: auto; /* Empurra o link para a extrema direita */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #007bff; /* Ajuste a cor do link se necessário */
+}
+
+main {
+    flex-grow: 1; /* O conteúdo principal cresce para ocupar o espaço entre header e footer */
+    padding: 20px 0; /* Adiciona espaço ao redor do conteúdo principal */
+}
+
+
+footer {
+    background-color: #f8f9fa; /* Cor de fundo do footer */
+    padding: 20px 0; /* Padding para o footer */
+    margin-top: auto; /* Garante que o footer fique "colado" no fundo */
+    width: 100%; /* Faz o footer ocupar 100% da largura */
+    display: flex; /* Usar flexbox para o layout do footer */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo do footer */
+}
+
+.container {
+    display: flex; /* Flexbox para o layout */
+    justify-content: center; /* Centraliza o conteúdo dentro da div */
+    align-items: center; /* Alinha verticalmente os itens */
+    width: 100%; /* Garante que a div container ocupe 100% da largura */
+}
+
+.container a {
+    color: inherit; /* Herda a cor do elemento pai */
+    text-decoration: none; /* Remove o sublinhado */
+    margin: 0 10px; /* Espaço entre os links */
+}
+
+.container a:hover {
+    text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse */
+}
+
+

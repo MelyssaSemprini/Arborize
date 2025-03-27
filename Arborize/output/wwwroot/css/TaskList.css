@@ -1,0 +1,87 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+   --dark-green: #00712D;
+   --light-green: #D5ED9F;
+   --beige: #FFFBE6;
+   --orange:#FF9100;
+   --default-font: "Roboto", sans-serif;
+   --default-title: "Genos", sans-serif;
+}
+
+body {
+    color: var(--dark-green);
+}
+
+h1, h2 {
+    font-family: var(--default-title);
+}
+
+.container {
+    width: 95vw;
+    height: 80vh;
+    border-radius: 4rem;
+    background: url(https://picsum.photos/seed/nature/400/400/?blur=3) no-repeat center/cover;
+
+}
+
+.container-info {
+    width: 50vw;
+    height: auto;
+    transition: all ease-in-out .5s;
+}
+
+.tarefa, .produto {
+    border-radius: 2rem;
+    padding: .5rem;
+    margin: 2rem;
+}
+
+.tarefa h3 {
+    font-size: 1.3rem;
+    padding: .5rem;
+}
+
+.False {
+    border: green solid .17rem;
+}
+
+
+.True {
+    border: red solid .17rem;
+    color: red;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.produto {
+    border: .1rem solid green;
+}
+
+.btn-action {
+    background-color: var(--dark-green);
+    color: var(--light-green);
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.btn-action a {
+    color: var(--light-green);
+    text-decoration: none;
+}
+
+.btn-tarefa {
+    color: var(--beige);
+    background-color: var(--orange);
+    padding: .2rem .5rem;
+    border-radius: 2rem;
+    border: none;
+}
+
+.produto-img {
+    width: 15vw;
+    height: 20vh;
+    border-radius: 2rem;
+    object-fit: cover;
+}

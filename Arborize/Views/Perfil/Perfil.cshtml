@@ -1,0 +1,92 @@
+@* Esta página será renderizada sem dados específicos, como nome de usuário ou bio. *@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nasson Freitas de Paula">
+    <title>Meu Perfil - Arborize</title>
+    <link rel="stylesheet" href="~/css/Perfil3.css">
+    <link rel="icon" type="image/png" href="/codigo-fonte/img/LogoArborize.png">
+</head>
+<body>
+    <header>
+        <h1>Perfil do Usuário</h1>
+        <div class="logo">Arborize</div>
+        <div class="buttons-container">
+            <button class="edit-profile-btn"><a href="/codigo-fonte/editarperfil.html" class="botao-link">Editar
+                    Perfil</a></button>
+            <button class="logout-btn"><a href="/codigo-fonte/home.html" class="botao-linkSair">Sair</a></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="profile-section">
+            <div class="profile-info">
+                <div class="avatar"> <img class="perfil" src="/codigo-fonte/img/iconPerfil.png" alt="foto do usuário">
+                </div>
+                <br>
+                <h1>Nome de Usuário</h1>
+                <div class="user-bio">
+                    <p>Esta é a bio do usuário. O usuário pode editar estas informações para adicionar mais detalhes
+                        sobre si mesmo.</p>
+                </div>
+            </div>
+        </section>
+        <section class="planting-stats">
+            <h2>Estatísticas de Plantio</h2>
+            <p>Acompanhe sua campanha de plantio.</p>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>Total de Árvores Plantadas</h3>
+                    <p>100</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Espécies de Árvores</h3>
+                    <p>5</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="registered-trees">
+            <h2>Árvores Cadastradas</h2>
+            <div class="tree-cards">
+                <div class="tree-card">
+                    <img src="/docs/img/fotocarvalho1.jpg" alt="Carvalho">
+                    <h3>Carvalho</h3>
+                    <p>Localização: Lat 30.335, Long -97.753</p>
+                    <p>Data de Cadastro: 10/10/2022</p>
+                </div>
+                <div class="tree-card">
+                    <img src="/docs/img/fotopinheiro1.png" alt="Pinheiro">
+                    <h3>Pinheiro</h3>
+                    <p>Localização: Lat 32.715, Long -117.162</p>
+                    <p>Data de Cadastro: 15/11/2022</p>
+                </div>
+            </div>
+            <button class="view-more-btn"><a href="#" class="botao-linkVer">Ver Mais</a></button>
+        </section>
+
+        <section class="achievements">
+            <h2>Conquistas</h2>
+            <div class="achievements-list">
+                <div class="achievement-item">
+                    <img src="/docs/img/taca.png" alt="Mestre de Plantio">
+                    <p>Mestre de Plantio</p>
+                    <p><strong>Desbloqueado</strong></p>
+                </div>
+                <div class="achievement-item">
+                    <img src="/docs/img/medalha.png" alt="Distintivo Folha de Ouro">
+                    <p>Distintivo Folha de Ouro</p>
+                    <p><strong>Desbloqueado</strong></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Arborize</p>
+    </footer>
+</body>
+</html>

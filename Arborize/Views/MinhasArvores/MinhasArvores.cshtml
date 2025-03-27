@@ -1,0 +1,56 @@
+@model List<Arborize.Models.CadastrarArvore>
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Árvores</title>
+    <link rel="stylesheet" href="~/css/minhasArvores.css">
+</head>
+<body>
+    <header class="p-3 bg-light d-flex justify-content-between align-items-center">
+        <div class="header-logo">
+            <h1>Arborize</h1>
+        </div>
+        <nav>
+            <a href="#">Feed</a>
+            <button class="back-btn" onclick="history.back();">Voltar</button>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section class="intro">
+            <h2>Minhas Árvores Cadastradas</h2>
+        </section>
+
+        <section class="gallery">
+            <div class="tree-cards">
+                @if (Model != null && Model.Any())
+                {
+                    @foreach (var arvore in Model)
+                    {
+                        <div class="tree-card">
+                            <img src="/codigo-fonte/img/Árvores/@arvore.NomeEspecie.ToString() + ".png" alt="@arvore.NomeEspecie">
+
+                            <h4>@arvore.NomeEspecie</h4>
+                            <p>@arvore.DescricaoArv</p>
+                            <a href="@Url.Action("Detalhes", "DetalhesArvore", new { id = arvore.IdArvore })">Ver Detalhes</a>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p>Você ainda não cadastrou nenhuma árvore.</p>
+                }
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light">
+        <div class="container d-flex justify-content-between align-items-center footer-left">
+            <p>© 2024 Arborize. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

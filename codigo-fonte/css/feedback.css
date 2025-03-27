@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o Header */
+header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px; 
+    background-color: #00712D;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+    display: flex; 
+    align-items: center;
+    width: 15rem;
+    height: auto;
+}
+
+.header-logo h1 {
+    margin-left: 10px;
+    font-family: "Aclonica";
+    font-size: 24px; 
+    color: black; 
+}
+
+.login-link {
+    margin-left: auto;
+    text-decoration: none; 
+    color: #007bff; 
+}
+
+/* Fim Estilos para o Header */
+
+html, body {
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    background-color: #D5ED9F;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.hero-section,
+.consultora-section,
+.mais-impressoes {
+    flex-shrink: 0;
+}
+
+.mais-impressoes {
+    margin-top: auto;
+}
+
+
+.mais-impressoes {
+    padding: 50px;
+    background-color: #D5ED9F;
+    text-align: center;
+    min-height: 200px;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 130px 0;
+    background-color: #D5ED9F;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.hero-section h1 {
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+.highlight {
+    color: #00712D;
+}
+
+.vector-top {
+    position: absolute; 
+    top: 10px; 
+    right: 0;
+}
+
+.vector-3 {
+    position: relative;  
+    width: 9rem;
+    height: auto;
+}
+
+.vector-group-left {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7rem; 
+    position: relative;
+}
+
+.vector-1 {
+    position: relative;  
+    width: 70px;
+    margin-left: 2.2rem;
+    height: auto;
+    z-index: 1;
+}
+
+.vector-2 {
+    position: absolute;
+    width: 300px;
+    height: auto;
+}
+
+.vector-4 {
+    position: absolute; 
+    right: 0; 
+    top: 10rem; 
+    transform: translateY(-50%);
+    width: 60px; 
+    height: auto;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    color: #ff9933;
+}
+
+.buttons {
+    display: flex; 
+    justify-content: center; 
+    padding: 3rem;
+    
+}
+
+/* Estilos gerais */
+body {
+    font-family: "Inter", sans-serif;
+}
+  
+.modal {
+    display: none; /* Já estava correto */
+    position: fixed; /* Fixa o modal em relação à tela */
+    z-index: 1000; /* Fica acima de outros elementos */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    overflow: hidden; /* Esconde qualquer conteúdo que transborde */
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    z-index: 1001; /* Fica acima do fundo escuro */
+}
+
+.modal-header {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 22px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+    color: #333;
+}
+
+.required {
+    color: red;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.submit-btn {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+.buttons button {
+    margin: 10px;
+    font-size: 1em;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Adiciona a transição suave */
+}
+
+.open-modal-btn {
+    background-color: #00712D; 
+    color: white; 
+    border: none;
+    padding: 15px 30px; /* Tamanho específico para o botão de Dar meu Feedback */
+}
+
+.buttons button:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do botão em 10% ao passar o mouse */
+}
+
+.outlined-button {
+    background-color: transparent; 
+    color: #45485F; 
+    border: 2px solid #45485F;
+    padding: 15px 20px; /* Tamanho específico para o botão de colaborar */
+}
+
+.consultora-section {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #D5ED9F;
+}
+
+.consultora-section h2 {
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.seta-esquerda, .seta-direita {
+    font-size: 2.5em; 
+    color: #00712D; 
+    cursor: pointer;
+    margin-inline: 2rem;
+    margin-top: 5rem;
+}
+
+.seta-esquerda{
+    margin-right: 4rem;
+}
+
+.seta-direita{
+    margin-left: 4rem;
+}
+
+.consultora-content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+
+.consultora-photo {
+    width: 8rem;
+    height: auto;
+    border-radius: 10%;
+    margin-right: 20px;
+    margin-bottom: 2rem;
+}
+
+.testimonial {
+    max-width: 20rem;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 1rem;
+}
+
+.testimonial-text {
+    font-size: 1rem;                   
+    line-height: 1.5;                  
+    margin-bottom: 1rem;               
+}
+
+
+.testimonial-author {
+    font-size: 1.2rem;          
+    font-weight: bold;              
+    display: block;      
+    margin-top: 1rem;           
+}
+
+.testimonial-role {
+    font-size: 1rem;           
+    color: #777;           
+    display: block;
+}
+
+.mais-impressoes {
+    padding: 50px;
+    background-color: #D5ED9F;
+    text-align: center;
+}
+
+.mais-impressoes h2 {
+    color: #1A5319;
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+    font-size: 2rem;
+}
+
+.feedback-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.feedback-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+
+.feedback-card:hover {
+    transform: scale(1.05);
+}
+
+.feedback-card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feedback-card p {
+    color: #666;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.user-info img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.user-info span {
+    font-size: 14px;
+    color: #333;
+/* 
+   Font-family: "Inter", sans-serif;
+   Comentado por enquanto, pois estou avaliando se será mantido no design final.
+*/
+}
+
+/* Estilização dos Cards */
+
+.feedback-card-1 {
+    background-color: #F4D452;
+    border: 0.1rem solid #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+
+.feedback-card-2 {
+    background-color: #F9F9F9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+
+.feedback-card-3 {
+    background-color: #D5ED9F;
+    border: 0.25rem solid #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+
+.feedback-card-1:hover, .feedback-card-2:hover, .feedback-card-3:hover {
+    transform: scale(1.05);
+}
+
+
+/* Fim Estilização dos Cards */
+
+.ver-mais {
+    margin-top: 5rem;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-family: "Aclonica", sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #00712D; 
+    color: white; 
+    border: none; 
+    animation: pulse 2s infinite; /* Animação pulsante */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05); /* Aumenta o tamanho */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.ver-mais:hover {
+    animation: none; /* Para a animação ao passar o mouse */
+    background-color: #00621A; /* Muda a cor ao passar o mouse */
+}
+
+/* HEADER */
+/* Estilo básico */
+
+html, body {
+    height: 100%; /* Ocupa 100% da altura da janela do navegador */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe a altura total da tela */
+}
+
+header {
+    display: flex; /* Usar Flexbox para o layout do cabeçalho */
+    justify-content: space-between; /* Espaçar os itens entre si */
+    align-items: center; /* Alinhar verticalmente os itens */
+    padding: 20px; /* Ajuste o padding conforme necessário */
+    background-color: #f8f9fa; /* Cor do fundo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+    display: flex; /* Flexbox para o logo e título */
+    align-items: center; /* Alinha verticalmente o ícone e o título */
+}
+
+.login-link {
+    margin-left: auto; /* Empurra o link para a extrema direita */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #007bff; /* Ajuste a cor do link se necessário */
+}
+
+main {
+    flex-grow: 1; /* O conteúdo principal cresce para ocupar o espaço entre header e footer */
+    padding: 20px 0; /* Adiciona espaço ao redor do conteúdo principal */
+}

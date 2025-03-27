@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback</title>
+  <link rel="stylesheet" href="~/css/feedback.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Header copiado -->
+  <header class="p-3 bg-light d-flex justify-content-between align-items-center">
+    <div class="header-logo">
+      <svg id="icone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="40" height="auto">
+        <image href="~/img/ICON - ARBORIZE.svg" x="20" y="20" width="60" height="60" />
+      </svg>
+      <h1>Arborize</h1>
+    </div>
+    <a href="#" class="login-link">Já tem uma conta? Faça o login.</a>
+  </header>
+  <!-- Fim do Header copiado -->
+
+  <div class="hero-section">
+    <div class="vector-top">
+      <img src="~/img/Feedback/Vetores/vector3.png" alt="Vector 3" class="vector-3" />
+    </div>
+    <h1 style="font-size: 3rem;">
+      Seu Feedback,<span class="highlight"> Nosso <br />Futuro</span>
+    </h1>
+    <div class="buttons">
+      <!-- Botão para abrir o modal -->
+      <button id="open-modal" class="open-modal-btn">Ajude-nos a melhorar</button>
+
+      <!-- Modal -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="modal-header">
+            <img src="~/img/ICON - ARBORIZE.svg" alt="Logo Arborize" class="logo">
+            <h2>O que você achou do nosso site?</h2>
+          </div>
+          <form>
+            <label for="titulo">Título <span class="required">*</span></label>
+            <input type="text" id="titulo" placeholder="Informe o título do seu feedback" required>
+
+            <label for="feedback">Feedback <span class="required">*</span></label>
+            <textarea id="feedback" placeholder="Escreva sua sugestão ou comentário" required></textarea>
+
+            <p>Se preferir, entre em contato conosco diretamente: <a href="mailto:contato@arborize.com">Envie-nos uma mensagem</a></p>
+
+            <button type="submit" class="submit-btn">Compartilhar</button>
+          </form>
+        </div>
+      </div>
+      <button class="outlined-button">Colaborar</button>
+    </div>
+    <div class="vectors-bottom">
+      <div class="vector-group-left">
+        <img src="~/img/Feedback/Vetores/vector1.png" alt="Vector 1" class="vector-1" />
+        <img src="~/img/Feedback/Vetores/vector2.png" alt="Vector 2" class="vector-2" />
+        <img src="~/img/Feedback/Vetores/vector4.png" alt="Vector 4" class="vector-4" />
+      </div>
+    </div>
+  </div>
+
+  <section class="consultora-section" data-aos="fade-up">
+    <i class="bi bi-arrow-left-circle seta-esquerda"></i>
+    <div class="consultora-content">
+      <img src="~/img/Feedback/avatar.png" alt="Consultora de Projetos Ambientais" class="consultora-photo" />
+      <div>
+        <h2>Consultora de <br />Projetos Ambientais</h2>
+        <p>
+          Mariana é especialista em sustentabilidade, com mais de 5 <br />anos
+          de experiência em projetos de reflorestamento.
+        </p>
+      </div>
+    </div>
+    <div class="testimonial" data-aos="fade-up">
+      <p>
+        A plataforma de incentivo à plantação é realmente inovadora! O sistema
+        de pontos integrado com a possibilidade de resgatar prêmios e obter
+        descontos é uma forma superengajadora de incentivar ações
+        sustentáveis. A interface é intuitiva e torna o acompanhamento do
+        progresso fácil, além de motivar o usuário a continuar plantando.
+        Ótima iniciativa!
+      </p>
+      <span class="testimonial-author"><br />Mariana Nogueira</span>
+      <span class="testimonial-role">Especialista em Sustentabilidade</span>
+    </div>
+    <i class="bi bi-arrow-right-circle seta-direita"></i>
+  </section>
+
+  <section class="mais-impressoes" data-aos="zoom-in">
+    <h2>Mais Impressões</h2>
+    <div class="feedback-cards">
+      <div class="feedback-card-1">
+        <h3>Perfeito!</h3><br />
+        <p>
+          A experiência na plataforma foi excelente. Tudo funciona
+          perfeitamente, e o atendimento é incrível.
+        </p>
+        <div class="user-info">
+          <br /><img src="~/img/Feedback/FotoPerfil/Face 1.png" alt="Felipe Santos">
+          <span>Felipe Santos</span>
+        </div>
+      </div>
+      <div class="feedback-card-2" id="feedback-card">
+        <h3>Ótimo design</h3><br />
+        <p>
+          Adorei o layout e a facilidade de uso. Simples e direto, sem
+          complicações desnecessárias.
+        </p>
+        <div class="user-info">
+          <br /><img src="~/img/Feedback/FotoPerfil/Face 2.png" alt="Isabela Ferreira">
+          <span>Isabela Ferreira</span>
+        </div>
+      </div>
+      <div class="feedback-card-2">
+        <h3>A melhor plataforma</h3><br />
+        <p>
+          A combinação de sustentabilidade com gamificação realmente faz a
+          diferença. Me sinto motivada a continuar contribuindo.
+        </p>
+        <div class="user-info">
+          <br /><img src="~/img/Feedback/FotoPerfil/Face 3.png" alt="Tatiane Pires">
+          <span>Tatiane Pires</span>
+        </div>
+      </div>
+      <div class="feedback-card-3">
+        <h3>Maravilhoso!</h3><br />
+        <p>
+          Foi uma jornada incrível aprender sobre o impacto ambiental de forma
+          tão interativa. A plataforma é realmente educacional.
+        </p>
+        <div class="user-info">
+          <br /><img src="~/img/Feedback/FotoPerfil/Face 4.png" alt="Li Na">
+          <span>Li Na</span>
+        </div>
+      </div>
+    </div>
+    <button class="ver-mais">Ver mais</button>
+  </section>
+</body>
+<script src="~/js/modalFeedback.js"></script>
+</html>

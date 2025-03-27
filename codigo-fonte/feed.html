@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arthur Pereira">
+    <link rel="stylesheet" href="css/feed.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Arborize | Feed</title>
+    <link rel="shortcut icon" href="img/LogoArborize.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+  />
+</head>
+<body>
+    <header
+      class="p-3 bg-light d-flex justify-content-between align-items-center"
+    >
+      <div class="header-logo">
+        <svg
+          id="icone"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          width="40"
+          height="40"
+        >
+          <image class="logo" id="logo"
+            href="img/LogoArborize.png"
+            x="20"
+            y="20"
+            width="60"
+            height="60"
+          />
+        </svg>
+        <h1>Arborize</h1>
+      </div>
+      <button id="openModalBtn">
+        <div class="welcome-message login-link">Bem-vindo ao Arborize! Compartilhe seu amor pelas árvores.<img src="img\image.png" alt="" class="adc-post"></div>
+      </button>
+
+      <div id="addPostModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Novo Post</h2>
+      
+          <!-- Campo para a localização -->
+          <label for="postLocation">Localização:</label>
+            <select id="postLocation" name="postLocation" class="form-control">
+              <option value="Parque Central">Parque Central</option>
+              <option value="Praça do Centro">Praça do Centro</option>
+              <option value="Jardim Botânico">Jardim Botânico</option>
+              <option value="Bosque Municipal">Bosque Municipal</option>
+              <!-- Adicione mais opções conforme necessário -->
+            </select>
+          
+          <!-- Campo para a imagem -->
+          <label for="postImage">Foto:</label>
+          <button id="uploadButton" class="btn btn-primary btn-block mb-2">Escolher arquivo</button>
+          <input type="file" id="postImage" accept="image/*">
+          
+          <!-- Campo para a descrição -->
+          <textarea id="postDescription" placeholder="Escreva uma descrição..." rows="4"></textarea>
+          
+          <!-- Botão de postagem -->
+          <button id="submitPostBtn">Postar</button>
+        </div>
+      </div>
+
+    </header>
+    <div class="main-container">
+        <div class="user-info">
+            <h2>Arthur Pereira</h2>
+            <a href="meuperfil.html"><img src="img\user.png" alt="" class="user-img"></a>
+            <p>Entusiasta</p>
+        </div>
+
+        <div class="content">
+            <!-- Post 1 -->
+            <div class="post">
+                <div class="post-header">
+                    <div class="profile">
+                        <a href="meuperfil.html"><img src="img\user.png" alt="Usuário"></a>
+                        <p>User1</p>
+                    </div>
+                    <p>10h - Floresta</p>
+                </div>
+                <div class="post-body">
+                    <p>Beautiful Oak Tree</p>
+                    <img src="img/arvore-feed1.jpg" alt="" class="post-img">
+                    <p>Spent the day exploring the forest. Found this majestic oak tree!</p>
+                </div>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="post">
+                <div class="post-header">
+                    <div class="profile">
+                        <a href="meuperfil.html"><img src="img/user.png" alt="Usuário"></a>
+                        <p>User2</p>
+                    </div>
+                    <p>12h - Parque</p>
+                </div>
+                <div class="post-body">
+                    <p>Cherry Blossoms</p>
+                    <img src="img/arvore-feed2.jpeg" alt="arvores" class="post-img">
+                    <p>Spring has arrived in the park. Cherry blossoms are in full bloom!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+      <h2>Menu Lateral</h2>
+      <a href="#" class="FeedBack">
+        <p>🌳 Minhas Arvores</p>
+      </a>
+      <a href="feedback.html" class="FeedBack">
+        <p>✍🏻 FeedBack</p>
+      </a>
+      <a href="#" class="FeedBack">
+        <p>✍🏻 Adicionar Arvores</p>
+      </a>
+  </div>
+
+  <div id="overlay" class="overlay"></div>
+
+    <script src="javascript/feed.js"></script>
+</body>
+</html>

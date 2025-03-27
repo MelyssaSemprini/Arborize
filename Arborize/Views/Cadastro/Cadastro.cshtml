@@ -1,0 +1,106 @@
+@model Arborize.Models.CadastroModel
+@{
+    ViewData["UseLayout"] = false;
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ana Clara Santos de Paula">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arborize | Cadastro</title>
+    <link rel="website icon" type="png" href="~/img/LogoArborize.png">
+    <link rel="stylesheet" type="text/css" href="~/css/Cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Scripts necessários para a validação -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+
+</head>
+
+
+<body
+    style="display: flex; justify-content: center; align-items: center; min-height: 100vh; background: url('/img/capaDeFundoLogin.jpg') no-repeat; background-size: cover; background-position: center;">
+
+    <div class="btn-voltar">
+        <a href="/Home" class="btn-voltar2" aria-label="Voltar a página anterior.">VOLTAR</a>
+    </div>
+
+    <div class="conteudo">
+        <form asp-action="Create" method="post">
+            <h1>Cadastro</h1>
+
+            <!-- Exibir erros de validação -->
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="input-box">
+                <input asp-for="NomeCompleto" placeholder="Nome completo" required />
+                <span asp-validation-for="NomeCompleto" class="text-danger"></span>
+
+                <input class="input-data" asp-for="DataDeNascimento" type="date" placeholder="Data de nascimento"
+                    required />
+                <span asp-validation-for="DataDeNascimento" class="text-danger"></span>
+            </div>
+
+            <div class="input-boxEm">
+                <input asp-for="Email" type="email" placeholder="E-mail" required />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="input-box">
+                <input asp-for="Rua" type="text" placeholder="Rua" required />
+                <span asp-validation-for="Rua" class="text-danger"></span>
+
+                <input asp-for="Bairro" type="text" placeholder="Bairro" required />
+                <span asp-validation-for="Bairro" class="text-danger"></span>
+            </div>
+
+            <div class="input-box">
+                <input asp-for="NumeroDaCasa" type="text" placeholder="N°" required />
+                <span asp-validation-for="NumeroDaCasa" class="text-danger"></span>
+
+                <input asp-for="Cidade" type="text" placeholder="Cidade" required />
+                <span asp-validation-for="Cidade" class="text-danger"></span>
+            </div>
+
+            <div class="input-box">
+                <input asp-for="Cep" type="text" placeholder="CEP" required />
+                <span asp-validation-for="Cep" class="text-danger"></span>
+
+                <input asp-for="Estado" type="text" placeholder="Estado" required />
+                <span asp-validation-for="Estado" class="text-danger"></span>
+            </div>
+
+            <div class="input-box">
+                <!-- Campo Senha -->
+                <input asp-for="Senha" type="password" placeholder="Senha" required />
+                <span asp-validation-for="Senha" class="text-danger"></span>
+
+                <!-- Campo Repetir Senha -->
+                <input asp-for="RepetirSenha" type="password" placeholder="Repetir senha" required />
+                <span asp-validation-for="RepetirSenha" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn-cadastrar">CADASTRAR</button>
+        </form>
+    </div>
+
+    <script>
+        // Habilitar a validação no lado do cliente
+        $(document).ready(function () {
+            $("form").validate();
+        });
+    </script>
+
+</body>
+
+</html>

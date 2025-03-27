@@ -1,0 +1,47 @@
+@model IEnumerable<Arborize.Models.MarketPlaceModel>
+
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+    ViewData["Title"] = "Marketplace";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/TaskList.css" asp-append-version="true" />
+}
+
+
+<section class="container display-flex align-center justify-center txt-center">
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
+    }
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+
+    <div class="container-info">
+        <h2>LOJA DE TROCAS</h2>
+        <p>Aproveite os seus pontos trocando por diversos benefícios oferecidos por estabelecimentos parceiros. Essa é a nossa maneira de agradecer sua contribuição ao meio ambiente!</p>
+        <button class="btn-action">
+            <a asp-area="" asp-controller="TaskList" asp-action="TaskList">Ganhe mais pontos</a>
+        </button>
+    </div>
+</section>
+
+<section class="container-produtos display-flex justify-around">
+    @foreach (var produto in Model)
+    {
+        <div class="produto txt-center">
+            <h3>@produto.NomeProduto</h3>
+            <img src="@Url.Content(produto.FotoProduto)" alt="@produto.NomeProduto" class="produto-img">
+            <p>@produto.DescricaoProduto</p>
+            <p>$@produto.PrecoProduto</p>
+            <form asp-action="Comprar" asp-controller="MarketPlace" method="post">
+                <input type="hidden" name="nomeProduto" value="@produto.NomeProduto" />
+                <button type="submit" class="btn-tarefa">Comprar</button>
+            </form>
+
+        </div>
+    }
+</section>

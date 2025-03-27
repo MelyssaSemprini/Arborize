@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nasson Freitas de Paula">
+    <title>Arborize - Edição de Perfil</title>
+    <link rel="stylesheet" href="/codigo-fonte/css/editarperfil.css">
+    <link rel="icon" type="image/png" href="/codigo-fonte/img/LogoArborize.png">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Arborize</div>
+        <button class="edit-profile-btn"><a href="/codigo-fonte/home.html" class="botao-link">Home</a></button>
+    </div>
+    <div class="container">
+        <div class="profile-section">
+            <div class="profile-photo"><img src="/codigo-fonte/img/iconPerfil.png" alt="Imagem do Usuário"></div>
+            <div class="profile-info">
+                <h2>Nome do Usuário</h2>
+                <p>Edite seu perfil abaixo.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="profile-image">Carregar Imagem</label>
+                        <input type="file" id="profile-image" accept="image/*">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="form-section">
+            <h2>Edição de Informações</h2>
+            <form>
+                <div class="form-group">
+                    <label for="apelido">Apelido</label>
+                    <input type="text" id="apelido" placeholder="Insira seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" placeholder="Escreva uma breve descrição sobre você" rows="4"></textarea>
+                </div>
+                <div class="form-buttons">
+                    <button type="button" class="cancel-button"><a href="/codigo-fonte/meuperfil.html">Cancelar</a></button>
+                    <button type="submit" class="save-button"><a href="/codigo-fonte/meuperfil.html" class="botao-salvar">Salvar Mudanças</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+

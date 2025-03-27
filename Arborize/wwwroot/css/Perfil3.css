@@ -1,0 +1,269 @@
+﻿/* Reset de margens e espaçamentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Estilos do Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00712d;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-profile-btn, .logout-btn {
+    background-color: #ff9100;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    appearance: none;
+    text-decoration: none;
+}
+
+.logout-btn {
+    background-color: #ff4b4b;
+}
+
+    .edit-profile-btn:hover, .logout-btn:hover {
+        color: #d5ed9f;
+    }
+
+/* Estilos gerais dos links */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Main Section */
+main {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #e5ffdd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Perfil Section */
+.profile-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.perfil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-bio {
+    margin-top: 10px;
+}
+
+/* Estatísticas de Plantio */
+.planting-stats {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.stat-item {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Áreas de Árvores Cadastradas */
+.registered-trees {
+    margin-top: 40px;
+}
+
+.tree-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tree-card {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+    .tree-card img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        max-height: 150px;
+        object-fit: cover;
+    }
+
+/*.imagenexemplo {
+     margin-bottom: 10px;
+    max-height: 150px;
+    object-fit: cover;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.imagenexemplo img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    max-height: 150px;
+    object-fit: cover;
+}*/
+
+        .view-more-btn {
+    background-color: #ff9100;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 20px auto;
+    text-decoration: none;
+    appearance: none;
+}
+
+    .view-more-btn:hover {
+        color: #d5ed9f;
+    }
+
+/* Conquistas */
+.achievements {
+    margin-top: 40px;
+}
+
+.achievements-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.achievement-item {
+    text-align: center;
+    flex: 1 1 150px;
+}
+
+    .achievement-item img {
+        width: 50px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    color: #00712d;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    main {
+        margin: 120px 10px;
+        padding: 10px;
+    }
+
+    .tree-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .achievements-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        margin: 100px 20px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .buttons-container {
+        gap: 5px;
+    }
+}

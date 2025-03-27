@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Arborize</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <header class="display-flex align-center justify-between height-10">
+        <div class="display-flex width-30 justify-around">
+            <img src="~/img/ICON - ARBORIZE.svg" alt="Logo Arborize" class="img-logo" />
+            <h1 class="title-font">Arborize</h1>
+        </div>
+        <ul class="display-flex justify-around width-70 list-none">
+            <li><a asp-area="" asp-controller="TaskList" asp-action="" class="no-decoration">Lista de Tarefas</a></li>
+            <li><a asp-controller="MarketPlace" asp-action="" class="no-decoration">Mercado de Pontos</a></li>
+            <li><a asp-controller="Feed" asp-action="FeedPage"class="no-decoration" >Feed</a></li>
+            <li>
+                Saldo: @ViewData["Coins"] 
+                <img src="~/img/moedas.svg"alt="Moeda" class="img-logo" />
+            </li>
+        </ul>
+    </header>
+
+    <main role="main">
+        @RenderBody()
+    </main>
+
+    <footer class="display-flex align-center justify-between">
+    <div class="width-30">
+        <ul class="paddingl-2 list-none">
+            <li>Arborize</li>
+            <li>&copy; 2024</li>
+            <li><a href="#" class="no-decoration" >Privacidade</a> - <a href="#" class="no-decoration" >Termos</a></li>
+        </ul>
+    </div>
+
+    <div class="display-flex width-70 justify-around">
+        <div>
+            <ul class="list-none">
+                <li><a asp-controller="MarketPlace" asp-action="Index" class="no-decoration" >Marketplace</a></li>
+                <li><a asp-controller="TaskList" asp-action="Index" class="no-decoration" >Lista de Tarefas</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Index" action="" class="no-decoration" >Home</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul class="list-none">
+                <li><a class="no-decoration" href="#">Sobre nós</a></li>
+                <li><a class="no-decoration" href="#">Contato</a></li>
+                <li><a class="no-decoration" href="#">Ajuda</a></li>
+                <li><a class="no-decoration" href="#">Carreiras</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="list-none">
+                <li><a class="no-decoration" href="#">Política de Cookies</a></li>
+                <li><a class="no-decoration" href="#">Blog</a></li>
+                <li><a class="no-decoration" href="#">Parceiros</a></li>
+                <li><a class="no-decoration" asp-area="" asp-controller="Profile" asp-action="Index">Meu Perfil</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="list-none">
+                <li><a class="no-decoration" href="#">Recursos</a></li>
+                <li><a class="no-decoration" href="#">Documentação</a></li>
+                <li><a class="no-decoration" href="#">API</a></li>
+                <li><a class="no-decoration" href="#">Desenvolvedores</a></li>
+            </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
